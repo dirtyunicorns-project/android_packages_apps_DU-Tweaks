@@ -46,5 +46,11 @@
         android:title="@string/powermenu_title"
         android:summary="@string/powermenu_summary"
         android:fragment="com.dirtyunicorns.tweaks.fragments.PowerMenu" />
+	
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
+	android:key="animations"
+	android:icon="@drawable/ic_animations"
+	android:title="@string/animations_title"
+	android:fragment="com.dirtyunicorns.tweaks.Animations"/>
 
 </PreferenceScreen>

@@ -38,6 +38,7 @@
     <string name="miscellaneous_summary">Настройки, которые не попали в другие категории</string>
     <string name="powermenu_title">Меню питания</string>
     <string name="powermenu_summary">Настройте параметры меню питания, такие как фонарик, режим полета или снимок экрана</string>
+    <string name="animations_title">Анимация</string>
 
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Сканнер отпечатков пальца</string>
@@ -437,5 +438,25 @@
     <string name="one_handed_mode_summary">Позволить прокручивать навигационную панель, чтобы включить режим одной руки</string>
     <string name="smartbar_double_tap_sleep_title">Выключение двойным нажатие</string>
     <string name="smartbar_double_tap_sleep_summary">Дважды нажмите на пустые области панели навигации, чтобы выключить экран</string>
+    
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Анимация всплывающих уведомлений</string>
+    <string name="toast_none_animation">Нет</string>
+    <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Исчезание</string>
+    <string name="toast_SlideRight_animation">Слайд вправо</string>
+    <string name="toast_SlideLeft_animation">Слайд влево</string>
+    <string name="toast_Xylon_animation">Анимация Xylon</string>
+    <string name="toast_Toko_animation">Анимация Toko</string>
+    <string name="toast_Tn_animation">Анимация Tn</string>
+    <string name="toast_Honami_animation">Анимация Honami</string>
+    <string name="toast_FastFade_animation">Быстрое затухание</string>
+    <string name="toast_GrowFade_animation">Постепенное затухание</string>
+    <string name="toast_GrowFadeCenter_animation">Постепенное затухание от центра</string>
+    <string name="toast_GrowFadeBottom_animation">Возрастающее затухание вниз</string>
+    <string name="toast_Translucent_animation">Прозрачность</string>
+    <string name="toast_SlideLeftRight_animation">Слайд слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Слайд справа налево</string>
+    <string name="toast">Всплывающие уведомления</string>
 
 </resources>
