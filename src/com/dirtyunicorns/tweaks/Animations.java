@@ -53,6 +53,8 @@ import android.view.Menu;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -77,6 +79,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String ANIMATION_DURATION = "animation_duration";
 
     private static final String SCROLLINGCACHE_DEFAULT = "2";
 
@@ -95,6 +98,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
     private ListPreference mScrollingCachePref;
+    private CustomSeekBarPreference mAnimationDuration;
     
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -115,7 +119,6 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
 	
 	mContentRes = getActivity().getContentResolver();
 	
-	PreferenceScreen prefs = getPreferenceScreen();
         mAnimations = AwesomeAnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;
         mAnimationsStrings = new String[animqty];
@@ -210,24 +213,25 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
         mToastAnimation.setOnPreferenceChangeListener(this);
 	
 	mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
-        int listviewanimation = Settings.System.getInt(getContentResolver(),
-                Settings.System.LISTVIEW_ANIMATION, 0);
+        int listviewanimation = Settings.System.getInt(getContentResolver(), Settings.System.LISTVIEW_ANIMATION, 0);
         mListViewAnimation.setValue(String.valueOf(listviewanimation));
         mListViewAnimation.setSummary(mListViewAnimation.getEntry());
         mListViewAnimation.setOnPreferenceChangeListener(this);
 
         mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
-        int listviewinterpolator = Settings.System.getInt(getContentResolver(),
-                Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        int listviewinterpolator = Settings.System.getInt(getContentResolver(), Settings.System.LISTVIEW_INTERPOLATOR, 0);
         mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
         mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
         mListViewInterpolator.setEnabled(listviewanimation > 0);
 	
-	 mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
-        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
-                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+	mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
         mScrollingCachePref.setOnPreferenceChangeListener(this);
+	
+	mAnimationDuration = (CustomSeekBarPreference) findPreference(ANIMATION_DURATION);
+        mAnimationDuration.setValue(Settings.System.getInt(resolver, Settings.System.ANIMATION_CONTROLS_DURATION, 0));
+        mAnimationDuration.setOnPreferenceChangeListener(this);
 	
     }
 
@@ -314,6 +318,10 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) objValue);
 	    }
 	    return true;
+	} else if (preference == mAnimationDuration) {
+            int val = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(), Settings.System.ANIMATION_CONTROLS_DURATION, val);
+            return true;
         }
         preference.setSummary(getProperSummary(preference));
         return result;
@@ -379,6 +387,6 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
 
         int mNum = Settings.System.getInt(mContentRes, mString, 0);
         return mNum;
-     }
+    }
 
 }
