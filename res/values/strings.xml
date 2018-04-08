@@ -42,6 +42,7 @@
     <string name="powermenu_title">Power menu</string>
     <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
     <string name="animations_title">Animations</string>
+    
     <!-- Lockscreen -->
     <string name="fingerprint_prefs_title">Fingerprint prefs</string>
     <string name="fingerprint_prefs_summary">Tweaks specific to the fingerprint scanner</string>
@@ -715,5 +716,9 @@
     <string name="toast_animation_test">This is test for selected toast animation</string>
 
     <string name="toast">Toast</string>
+    
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Android P animation style</string>
+    <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
 
 </resources>
