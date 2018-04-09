@@ -94,6 +94,7 @@ public class Animations extends SettingsPreferenceFragment implements OnPreferen
     private ListPreference mWallpaperIntraOpen;
     private ListPreference mWallpaperIntraClose;
     private ListPreference mTaskOpenBehind;
+    private SwitchPreference mAnimNoOverride;
     private ListPreference mToastAnimation;
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;

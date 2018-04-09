@@ -38,6 +38,12 @@
              settings:min="0"
              settings:units="ms"
              settings:interval="50"/>
+	     
+      <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+            android:key="animation_no_override"
+            android:title="@string/title_animation_no_override"
+            android:summary="@string/summary_animation_no_override"
+            android:defaultValue="false"/>
 
 
       <PreferenceCategory
@@ -54,11 +60,6 @@
       
       <PreferenceCategory
         android:title="@string/system_animations">
-
-        <SwitchPreference
-            android:key="animation_no_override"
-            android:title="@string/title_animation_no_override"
-            android:summary="@string/summary_animation_no_override" />
 
         <ListPreference
             android:key="activity_open"
