@@ -88,12 +88,6 @@
   <string name="button_backlight_on_touch_only_title">Подсветка кнопок при касании</string>
   <string name="button_backlight_on_touch_only_summary">Кнопки будут подсвечиваться только при нажатии, а не постоянно. Тайм-аут всё ещё применим.</string>
 
-  <!-- SystemUI theme -->
-  <string name="systemui_theme_style_title">Тема интерфейса</string>
-  <string name="systemui_theme_style_auto">Автоматическая (на основе обоев)</string>
-  <string name="systemui_theme_style_light">Светлая</string>
-  <string name="systemui_theme_style_dark">Темная</string>
-
   <!-- Power Menu -->
   <string name="powermenu_reboot_title">Перезагрузка</string>
   <string name="powermenu_advanced_reboot_title">Расширенная перезагрузка</string>
