@@ -742,5 +742,9 @@
     <string name="title_animation_no_override">Предотвратить переопределения приложениями</string>
     <string name="summary_animation_no_override">Запретить приложениям переопределять переходы</string>
     <string name="animation_duration_default">По умолчанию</string>
+    
+    <string name="flash_on_call_category">Пульсация фонариком</string>
+    <string name="flash_on_call_title">Пульсация фонариком при входящем вызове</string>
+    <string name="flash_on_call_delay_title">Частота пульсации фонарика</string>
 
 </resources>

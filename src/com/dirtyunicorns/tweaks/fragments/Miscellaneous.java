@@ -26,7 +26,10 @@ import android.os.Handler;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import com.android.settings.R;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -41,25 +44,32 @@ import com.android.settings.Utils;
 
 import com.dirtyunicorns.tweaks.preferences.ScreenshotEditPackageListAdapter;
 import com.dirtyunicorns.tweaks.preferences.ScreenshotEditPackageListAdapter.PackageItem;
-
-
+import com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference;
 
 public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
+    private static final String FLASH_ON_CALL_WAITING_DELAY = "flash_on_call_waiting_delay";
 
     private Preference mScreenshotEditAppPref;
     private ScreenshotEditPackageListAdapter mPackageAdapter;
+    private CustomSeekBarPreference mFlashOnCallWaitingDelay;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.miscellaneous);
+	
+	final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
 
         mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
         mScreenshotEditAppPref = findPreference("screenshot_edit_app");
         mScreenshotEditAppPref.setOnPreferenceClickListener(this);
+	mFlashOnCallWaitingDelay = (CustomSeekBarPreference) findPreference(FLASH_ON_CALL_WAITING_DELAY);
+        mFlashOnCallWaitingDelay.setValue(Settings.System.getInt(resolver, Settings.System.FLASH_ON_CALLWAITING_DELAY, 200));
+        mFlashOnCallWaitingDelay.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -101,6 +111,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+       ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mFlashOnCallWaitingDelay) {
+            int val = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(), Settings.System.FLASH_ON_CALLWAITING_DELAY, val);
+            return true;
+        }
         return false;
     }
 

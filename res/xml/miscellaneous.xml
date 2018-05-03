@@ -22,5 +22,26 @@
         android:key="screenshot_edit_app"
         android:title="@string/screenshot_edit_app"
         android:summary="@string/screenshot_edit_app_summary" />
+	
+    <PreferenceCategory
+        android:key="flash_on_call_options"
+        android:title="@string/flash_on_call_category" >
+
+        <com.dirtyunicorns.tweaks.preferences.SystemSettingSwitchPreference
+            android:key="flash_on_call_waiting"
+            android:title="@string/flash_on_call_title"
+            android:defaultValue="false" />
+
+        <com.dirtyunicorns.tweaks.preferences.CustomSeekBarPreference
+            android:key="flash_on_call_waiting_delay"
+            android:max="1000"
+            android:persistent="false"
+            android:title="@string/flash_on_call_delay_title"
+            settings:min="50"
+            settings:units="ms"
+            settings:interval="50"
+            android:dependency="flash_on_call_waiting"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
