@@ -703,9 +703,6 @@
     <string name="toast_SlideRightLeft_animation">Слайд справа налево</string>
     <string name="toast">Всплывающие уведомления</string>
     
-    <!-- Android P animation -->
-    <string name="system_default_animation_summary">Включить стиль анимации из Android P</string>
-    
     <!-- ListView animation -->
     <string name="listview_animation_title">Анимация списков</string>
     <string name="listview_off">По умолчанию</string>
