@@ -769,9 +769,9 @@
   <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED-устройствах благодаря перемещению пикселей с такой частотой</string>
 
   <string name="chooser_activity_blacklist_title">Черный список активити</string>
-  <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку "Поделиться"</string>
+  <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку Поделиться</string>
   <string name="chooser_activity_blacklist_cat_title">Черный список</string>
-  <string name="chooser_activity_blacklist_pref_title">Дбавить приложение</string>
+  <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
   <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь чтобы добавить, нажмите на добавленное приложение чтобы удалить его</string>
 
 </resources>
