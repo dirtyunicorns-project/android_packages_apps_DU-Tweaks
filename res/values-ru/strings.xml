@@ -78,12 +78,8 @@
   <string name="headsup_title">Всплывающие уведомления</string>
   <string name="headsup_summary">Настройка всплывающих уведомлений</string>
   <string name="recents_title">Недавние</string>
-<<<<<<< HEAD
-  <string name="recents_summary">Настройка недавно запущенных приложений OmniSwitch или AOSP</string>
-  
-=======
   <string name="recents_summary">Настройка недавно запущенных приложений Slim Recents или AOSP</string>
->>>>>>> 57a2bcd... Automatic translation import
+
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Настройки подсветки</string>
   <string name="button_backlight_enable_title">Включить подсветку кнопок</string>
