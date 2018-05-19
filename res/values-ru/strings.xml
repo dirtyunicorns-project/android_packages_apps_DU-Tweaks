@@ -43,6 +43,7 @@
   <string name="powermenu_title">Меню питания</string>
   <string name="powermenu_summary">Настройте параметры меню питания, такие как фонарик, режим полета или снимок экрана</string>
   <string name="animations_title">Анимация</string>
+  <string name="animations_summary">Измените системную анимации по своему усмотрению</string>
 
   <!-- Lockscreen -->
   <string name="fingerprint_prefs_title">Сканнер отпечатков пальца</string>

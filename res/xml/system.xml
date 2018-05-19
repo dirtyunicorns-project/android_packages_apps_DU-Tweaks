@@ -51,6 +51,7 @@
 	android:key="animations"
 	android:icon="@drawable/ic_animations"
 	android:title="@string/animations_title"
+	android:summary="@string/animations_summary"
 	android:fragment="com.dirtyunicorns.tweaks.Animations"/>
 
 </PreferenceScreen>

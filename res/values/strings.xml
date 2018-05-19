@@ -43,6 +43,7 @@
     <string name="powermenu_title">Power menu</string>
     <string name="powermenu_summary">Configure the power menu on and off the lockscreen with many items</string>
     <string name="animations_title">Animations</string>
+    <string name="animations_summary">Change system animations to your liking</string>
     <string name="system_animations">System Animations</string>
     <string name="listview">ListView</string>
     
