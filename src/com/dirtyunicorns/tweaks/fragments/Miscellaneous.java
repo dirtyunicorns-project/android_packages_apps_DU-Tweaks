@@ -51,6 +51,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
     private static final String FLASH_ON_CALL_WAITING_DELAY = "flash_on_call_waiting_delay";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private Preference mScreenshotEditAppPref;
     private ScreenshotEditPackageListAdapter mPackageAdapter;
@@ -63,6 +64,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 	
 	final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+	
+	PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefSet.removePreference(incallVibCategory);
+        }
 
         mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
         mScreenshotEditAppPref = findPreference("screenshot_edit_app");

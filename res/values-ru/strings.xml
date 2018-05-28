@@ -774,5 +774,11 @@
   <string name="chooser_activity_blacklist_cat_title">Черный список</string>
   <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
   <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь чтобы добавить, нажмите на добавленное приложение чтобы удалить его</string>
+  
+  <!-- Incall vibrate options -->
+  <string name="incall_vibration_category">Вибрация при звонке</string>
+  <string name="incall_vibrate_connect_title">Вибрация при ответе</string>
+  <string name="incall_vibrate_call_wait_title">Выбрация при ожидании</string>
+  <string name="incall_vibrate_disconnect_title">Вибрация при завершении звонка</string>
 
 </resources>
