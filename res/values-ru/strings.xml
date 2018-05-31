@@ -780,5 +780,16 @@
   <string name="incall_vibrate_connect_title">Вибрация при ответе</string>
   <string name="incall_vibrate_call_wait_title">Выбрация при ожидании</string>
   <string name="incall_vibrate_disconnect_title">Вибрация при завершении звонка</string>
+  
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Жесты</string>
+  <string name="edge_gestures_feedback_duration_title">Длительность виброотклика</string>
+  <string name="edge_gestures_long_press_delay_title">Задержка до начала длительного нажатия</string>
+  <string name="edge_gestures_back_category_title">Жест назад</string>
+  <string name="edge_gestures_back_edges_title">Использовать жест назад</string>
+  <string name="edge_gestures_landscape_back_edges_title">Использовать жест назад в альбомном режиме</string>
+  <string name="edge_gestures_back_screen_percent_title">Жест назад должен начинаться ниже этого процента экрана</string>
+  <string name="edge_gestures_back_screen_percent_summary">Переключить ниже % экрана</string>
+  <string name="edge_gestures_summary">Навигация с помощью жестов</string>
 
 </resources>

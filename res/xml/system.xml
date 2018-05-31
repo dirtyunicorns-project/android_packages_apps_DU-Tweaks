@@ -53,5 +53,12 @@
 	android:title="@string/animations_title"
 	android:summary="@string/animations_summary"
 	android:fragment="com.dirtyunicorns.tweaks.Animations"/>
+	
+    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
+	android:key="edge_gestures"
+	android:icon="@drawable/ic_edge_gestures"
+	android:title="@string/edge_gestures_title"
+	android:summary="@string/edge_gestures_summary"
+	android:fragment="com.dirtyunicorns.tweaks.EdgeGesturesSettings"/>
 
 </PreferenceScreen>
