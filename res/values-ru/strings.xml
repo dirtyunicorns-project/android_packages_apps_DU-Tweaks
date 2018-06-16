@@ -553,10 +553,8 @@
   <!-- DT2S on lockscreen -->
   <string name="double_tap_sleep_lockscreen">Дважды коснитесь экрана блокировки, чтобы перевести устройство в спящий режим</string>
   <!-- Suppress notification sound/vibration -->
-  <string name="notification_sound_vib_screen_on_title">Звуковые уведомления и вибрация при включенном экране</string>
-  <string name="notification_sound_vib_screen_on_never">Никогда</string>
-  <string name="notification_sound_vib_screen_on_always">Всегда (по умолчанию)</string>
-  <string name="notification_sound_vib_screen_on_nomedia">Если мультимедиа не воспроизводится</string>
+  <string name="notification_sound_vib_screen_on_title">Notification sound if screen is on</string>
+  <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
   <!-- Less notification sounds -->
   <string name="less_notification_sounds_title">Звуки \"умных\" уведомлений</string>
   <string name="less_notification_sounds_summary">Проигрывать звук уведомления для каждого приложения только один раз за указанный период</string>
@@ -810,5 +808,12 @@
   <string name="edge_gestures_back_screen_percent_title">Жест назад должен начинаться ниже этого процента экрана</string>
   <string name="edge_gestures_back_screen_percent_summary">Переключить ниже % экрана</string>
   <string name="edge_gestures_summary">Навигация с помощью жестов</string>
+
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Power menu background tint</string>
+  <string name="wallpaper_tint_recents">Recents background tint</string>
+  <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
+  <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
+  <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
 
 </resources>
