@@ -206,13 +206,24 @@
   <string name="recents_clear_all_location_bottom_right">Снизу справа</string>
   <string name="recents_clear_all_location_bottom_left">Снизу слева</string>
   <string name="recents_clear_all_location_bottom_center">Снизу по центру</string>
-  
+
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="lockscreen_items_other">Другое</string>
   <string name="hide_lockscreen_clock_title">Виджет часов</string>
   <string name="hide_lockscreen_clock_summary">Изменить видимость виджета часов</string>
+  <string name="lockscreen_clock_selection_title">Стиль часов</string>
+  <string name="lockscreen_clock_selection_digital">По умолчанию</string>
+  <string name="lockscreen_clock_selection_digital_bold">Цифровой (жирный)</string>
+  <string name="lockscreen_clock_selection_sammy">Sammy</string>
+  <string name="lockscreen_clock_selection_sammy_bold">Sammy (жирный)</string>
+  <string name="lockscreen_clock_selection_analog">Аналоговый</string>
   <string name="hide_lockscreen_date_title">Виджет даты</string>
   <string name="hide_lockscreen_date_summary">Изменить видимость даты под виджетом часов</string>
+  <string name="lockscreen_date_selection_title">Стиль даты</string>
+  <string name="lockscreen_date_selection_default_aosp">По умолчанию</string>
+  <string name="lockscreen_date_selection_default">По умолчанию (размер больше)</string>
+  <string name="lockscreen_date_selection_str_box">Полупрозрачный</string>
+  <string name="lockscreen_date_selection_str_round">Полупрозрачный скругленный)</string>
   <string name="hide_lockscreen_alarm_title">Текст будильника</string>
   <string name="hide_lockscreen_alarm_summary">Изменить видимость текста будильника под виджетом часов</string>
   
