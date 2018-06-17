@@ -780,11 +780,19 @@
   <string name="smart_pixels_shift_title">Защита от выгорания</string>
   <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED-устройствах благодаря перемещению пикселей с такой частотой</string>
 
+  <!-- Chooser activity blacklist -->
   <string name="chooser_activity_blacklist_title">Черный список активити</string>
   <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку Поделиться</string>
   <string name="chooser_activity_blacklist_cat_title">Черный список</string>
   <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
   <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь чтобы добавить, нажмите на добавленное приложение чтобы удалить его</string>
+  
+  <!-- Wallpaper tint -->
+  <string name="wallpaper_tint_power_menu">Оттенок фона меню питания</string>
+  <string name="wallpaper_tint_recents">Оттенок фона недавних приложений</string>
+  <string name="wallpaper_tint_keyguard">Оттенок фона экрана блокировки</string>
+  <string name="wallpaper_tint_notification_shade">Оттенок тени уведомлений</string>
+  <string name="wallpaper_tint_summary">Применить оттенок фона, основанный на обоях рабочего стола</string>
   
   <!-- Incall vibrate options -->
   <string name="incall_vibration_category">Вибрация при звонке</string>
